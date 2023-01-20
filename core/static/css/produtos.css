@@ -1,0 +1,30 @@
+.produto {
+    display: flex;
+    margin: 50px auto;
+    padding: 15px;
+    justify-content: center;
+    background-color: white;
+    max-width: 800px;
+    border-radius: 20px;
+}
+
+.produto img {
+    border-radius: 15px;
+    width: 400px;
+    height: 400px;
+}
+
+.infos {
+    display: block;
+    margin-left: 30px;
+}
+
+.infos h4 {
+    margin-top: 20px;
+}
+
+.infos p {
+    width: 300px;
+    margin-top: 10px;
+    text-align: justify;
+}

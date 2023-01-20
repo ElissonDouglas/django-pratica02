@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/produtos.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p>Loja Online</p>
+        </header>
+        <div class="produto">
+            <img src="{{ produto.imagem.url }}" alt="{{ produto.nome }}">
+            <div class="infos">
+                <h1>{{ produto.nome }}</h1>
+                <h2>R$ {{ produto.preco }}</h2>
+                <h4>Sobre Esse item</h4>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, rerum beatae magnam incidunt sed iusto omnis asperiores voluptates, laudantium dolores autem nesciunt! Soluta autem, aspernatur porro blanditiis tenetur saepe mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sint architecto voluptatem. Magni consequatur architecto deserunt impedit sed perferendis ipsum excepturi, quaerat nemo alias voluptatum ea exercitationem minima, incidunt iste.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
